@@ -1075,11 +1075,17 @@ pre::-webkit-scrollbar{
     height: 100vh;
     margin-bottom: 100px;
   }
+  .services .child:nth-child(2){
+    align-self: end;
+  }
 }
 
 
 
 @media (max-width:425px) {
+  .services .child:nth-child(2){
+    align-self: center;
+  }
   
   .box-container{
     flex-direction: column;
@@ -1109,6 +1115,17 @@ pre::-webkit-scrollbar{
   }
   .boxes{
     padding-inline: 20px;
+  }
+  .terms span div{
+    display:none;
+  }
+  .services{
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+  }
+  .services .child:nth-child(3),
+  .services .child:nth-child(4) {
+    align-self: start;
   }
 
 }
